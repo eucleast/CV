@@ -5,24 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - CV</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
             background-color: #f0f2f5;
-            color: #1c1e21;
-            margin: 0;
-            padding: 0;
         }
 
         header {
             background-color: #4267B2;
             color: #fff;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            position: relative;
         }
 
         header img {
@@ -66,71 +63,53 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            display: inline-block;
-            margin-right: 10px;
-            background-color: #4267B2;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        ul li:last-child {
-            margin-right: 0;
-        }
-
-        @media (max-width: 768px) {
-            header img {
-                max-width: 100px;
-            }
-        }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <img src="/passport.jpg" alt="Profile Photo">
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
+    <header class="mb-4">
+        <img src="passport.jpg" alt="Profile Photo" class="img-fluid rounded-circle">
+        <h1 class="display-4">Your Name</h1>
+        <p class="lead">Web Developer</p>
     </header>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: your@email.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: your@email.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p>BS in Computer Science, University of GitHub, 2020</p>
-    </section>
+        <section>
+            <h2>Education</h2>
+            <p>BS in Computer Science, University of GitHub, 2020</p>
+        </section>
 
-    <section>
-        <h2>Experience</h2>
-        <p>Web Developer at XYZ Company, 2021-present</p>
-    </section>
+        <section>
+            <h2>Experience</h2>
+            <p>Web Developer at XYZ Company, 2021-present</p>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item">HTML</li>
+                <li class="list-inline-item">CSS</li>
+                <li class="list-inline-item">JavaScript</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
